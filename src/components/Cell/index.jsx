@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Cell() {
-    let value = '';
+    let [value, setValue] = useState('');
 
     return (
         <td onClick={() => {
-            value = (Math.random() > 0.5? 'x': 'o');
-        }}>{value}</td>
+            if (value === '') {
+                setValue(Math.random() > 0.5? 'x': 'o')
+            }
+        }}>{ value }</td>
     )
 }
