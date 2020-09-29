@@ -1,0 +1,6 @@
+.tic-grid td {
+    border: 1px solid #fff;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+}

@@ -1,22 +1,24 @@
 import React from "react";
+import './index.css'
+import Cell from '../Cell/index';
 
 export default function Morpion() {
     return (
-        <table>
+        <table className="tic-grid">
             <tr>
-                <td>x</td>
-                <td></td>
-                <td></td>
+                <Cell />
+                <Cell />
+                <Cell />
             </tr>
             <tr>
-                <td>o</td>
-                <td>o</td>
-                <td></td>
+                <Cell />
+                <Cell />
+                <Cell />
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td>x</td>
+                <Cell />
+                <Cell />
+                <Cell />
             </tr>
         </table>
     )
